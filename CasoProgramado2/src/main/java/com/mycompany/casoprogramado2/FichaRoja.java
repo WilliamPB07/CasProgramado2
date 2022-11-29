@@ -8,8 +8,11 @@ package com.mycompany.casoprogramado2;
  *
  * @author wpena
  */
-public enum TipoFicha 
+public class FichaRoja extends Ficha
 {
-    ROJO,
-    AZUL;
+    public FichaRoja()
+    {
+        super("Jugador1", 1, Colorficha.ROJO);
+    }
+    @Override
 }

@@ -8,6 +8,44 @@ package com.mycompany.casoprogramado2;
  *
  * @author wpena
  */
-public class Ficha {
+public abstract class Ficha 
+{
+    String nombre;
+    int numeroJugador;
+    Colorficha colorFicha;
+
+    public Ficha(String nombre, int numeroJugador, Colorficha colorFicha) {
+        setNombre = nombre;
+        setNumeroJugador = numeroJugador;
+        setColorFicha = colorFicha;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String valor) {
+        nombre = valor;
+    }
+
+    public int getNumeroJugador() {
+        return numeroJugador;
+    }
+
+    public void setNumeroJugador(int numeroJugador) {
+        this.numeroJugador = numeroJugador;
+    }
+
+    public Colorficha getColorFicha() {
+        return colorFicha;
+    }
+
+    public void setColorFicha(Colorficha colorFicha) {
+        this.colorFicha = colorFicha;
+    }
+    
+    
+    
+    
     
 }
