@@ -7,8 +7,8 @@ package com.mycompany.casoprogramado2;
 import java.util.Scanner;
 
 /**
- *
- * @author wpena
+ * @author Sebastian SP 
+ * @author William PB
  */
 public class Juego {
     
@@ -22,7 +22,10 @@ public class Juego {
         
         
     }
-    
+     void crearJuego()
+     {
+         
+     }
     
     
     
