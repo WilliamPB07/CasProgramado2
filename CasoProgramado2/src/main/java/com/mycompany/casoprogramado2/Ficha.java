@@ -15,16 +15,17 @@ public abstract class Ficha
     Colorficha colorFicha;
 
     public Ficha(String nombre, int numeroJugador, Colorficha colorFicha) {
-        setNombre = nombre;
-        setNumeroJugador = numeroJugador;
-        setColorFicha = colorFicha;
+        setNombre(nombre);
+        setNumeroJugador(numeroJugador);
+        setColorFicha(colorFicha);
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String valor) {
+    protected void setNombre(String valor)
+    {
         nombre = valor;
     }
 
@@ -40,8 +41,8 @@ public abstract class Ficha
         return colorFicha;
     }
 
-    public void setColorFicha(Colorficha colorFicha) {
-        this.colorFicha = colorFicha;
+    public void setColorFicha(Colorficha valor) {
+        this.colorFicha = valor;
     }
     
     

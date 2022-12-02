@@ -14,5 +14,5 @@ public class FichaRoja extends Ficha
     {
         super("Jugador1", 1, Colorficha.ROJO);
     }
-    @Override
+    
 }
