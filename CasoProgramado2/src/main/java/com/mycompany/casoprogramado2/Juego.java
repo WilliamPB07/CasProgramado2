@@ -4,10 +4,29 @@
  */
 package com.mycompany.casoprogramado2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author wpena
  */
 public class Juego {
+    
+    Scanner entrada;
+    public Juego(Scanner entrada)
+    {
+        this.entrada = entrada;
+    }
+    
+    public void ejecutar(){
+        
+        
+    }
+    
+    
+    
+    
+    
+    
     
 }
