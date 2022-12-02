@@ -18,14 +18,17 @@ public class Juego {
         this.entrada = entrada;
     }
     
-    public void ejecutar(){
+    public void ejecutar()
+    {
         
-        
+        crearJuago();
     }
-     void crearJuego()
-     {
+    private void crearJuego()
+    {
+        int cuadrilla[][] = new int [6][7];
          
-     }
+         
+    }
     
     
     
