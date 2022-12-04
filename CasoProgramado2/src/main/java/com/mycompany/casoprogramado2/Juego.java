@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author Sebastian SP 
  * @author William PB
  */
-public class Juegos {
+public class Juego {
     
     Scanner entrada;
     public Juego(Scanner entrada)
