@@ -20,16 +20,13 @@ public class Juego {
     
     public void ejecutar()
     {
+          int cuadrilla[][] = new int [6][7];
+         
         
-        crearJuago();
     }
-    private void crearJuego()
-    {
-        int cuadrilla[][] = new int [6][7];
-         
-         
-    }
-    
+  
+      
+             
     
     
     
