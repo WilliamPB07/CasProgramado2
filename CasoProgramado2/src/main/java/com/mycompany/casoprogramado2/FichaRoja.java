@@ -8,11 +8,12 @@ package com.mycompany.casoprogramado2;
  *
  * @author wpena
  */
-public class FichaRoja extends Ficha
+public class FichaRoja extends Jugador
 {
     public FichaRoja()
     {
         super("Jugador1", 1, Colorficha.ROJO);
     }
+    
     
 }

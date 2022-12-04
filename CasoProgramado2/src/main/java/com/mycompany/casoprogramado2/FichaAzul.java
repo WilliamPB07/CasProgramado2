@@ -8,7 +8,7 @@ package com.mycompany.casoprogramado2;
  *
  * @author wpena
  */
-public class FichaAzul  extends Ficha
+public class FichaAzul  extends Jugador
 {
     public FichaAzul()
     {

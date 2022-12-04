@@ -8,13 +8,13 @@ package com.mycompany.casoprogramado2;
  *
  * @author wpena
  */
-public abstract class Ficha 
+public abstract class Jugador 
 {
     String nombre;
     int numeroJugador;
     Colorficha colorFicha;
 
-    public Ficha(String nombre, int numeroJugador, Colorficha colorFicha) {
+    public Jugador(String nombre, int numeroJugador, Colorficha colorFicha) {
         setNombre(nombre);
         setNumeroJugador(numeroJugador);
         setColorFicha(colorFicha);

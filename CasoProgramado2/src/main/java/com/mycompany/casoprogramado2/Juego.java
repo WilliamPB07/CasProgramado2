@@ -20,8 +20,14 @@ public class Juego {
     
     public void ejecutar()
     {
-          int cuadrilla[][] = new int [6][7];
-         
+       
+        
+        System.out.println("Bienvenidos al juego 4 en linea."
+                + "Reglas:"
+                + "el primero en formar un linea de 4 fichas del mismo color ya sea recta o diagonal gana."
+                + "Se juega eligiendo la columna en la que se quiere que se meta la ficha y esta caera a la casilla mas baja disponible.");
+        
+        
         
     }
   
