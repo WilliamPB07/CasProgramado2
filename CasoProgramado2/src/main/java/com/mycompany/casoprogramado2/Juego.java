@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class Juego {
     
     Scanner entrada;
+    public int opcion;
     public Juego(Scanner entrada)
     {
         this.entrada = entrada;
@@ -25,15 +26,30 @@ public class Juego {
         System.out.println("Bienvenidos al juego 4 en linea."
                 + "Reglas:"
                 + "el primero en formar un linea de 4 fichas del mismo color ya sea recta o diagonal gana."
-                + "Se juega eligiendo la columna en la que se quiere que se meta la ficha y esta caera a la casilla mas baja disponible.");
-        
-        
+                + "Se juega eligiendo la columna en la que se quiere que se meta la ficha y esta caera a la casilla mas baja disponible."
+                + "Por favor digite 1 para comenzar el juego.");
+        opcion = entrada.nextInt();
+        while   (opcion != 1)
+        {
+            if (opcion == 1)
+            {
+                juego();
+            }
+            else{
+                System.out.println("Por favor digite 1 para poder empezar el juego");
+            }
+        }
+  
+    }
+             
+    public void elecciondeJugador()
+    {
         
     }
-  
-      
-             
-    
+    public void juego()
+    {
+        
+    }
     
     
     

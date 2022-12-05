@@ -12,7 +12,7 @@ public class FichaRoja extends Jugador
 {
     public FichaRoja()
     {
-        super("Jugador1", 1, Colorficha.ROJO);
+        super("", 1, Colorficha.ROJO);
     }
     
     

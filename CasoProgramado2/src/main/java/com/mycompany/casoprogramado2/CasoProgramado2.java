@@ -17,5 +17,6 @@ public class CasoProgramado2 {
         Scanner entrada = new Scanner(System.in);
         Juego juego = new Juego(entrada);
         juego.ejecutar();
+        
     }
 }

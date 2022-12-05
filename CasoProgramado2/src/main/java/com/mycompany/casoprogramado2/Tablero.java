@@ -10,12 +10,12 @@ package com.mycompany.casoprogramado2;
  */
 public class Tablero {
     
-    public static String[][] tablero = new String[6][7];
+    public static Colorficha[][] tablero = new Colorficha[6][7];
     public static int espacioColumnas;
     public static int espacioFilas;
     public static boolean terminaJuego = false;
     
-    public void dibujoTablero(String[][] tabla) {
+    public void dibujoTablero(Colorficha[][] tabla) {
         System.out.print("          ");
         for (int i = 1; i < espacioColumnas + 1; i += 1) {
             System.out.print(i + "   ");
@@ -46,7 +46,7 @@ public class Tablero {
         }
         System.out.println("");
     }
-     public void verificadorGanador(String auxiliarJugador, String auxilarCaracter) {
+     public void verificadorGanador(String auxiliarJugador, Colorficha auxilarCaracter) {
         //Lee la linea horizontal en busca del ganador
         for (int i = 1; i < espacioFilas; i += 1) {
             for (int j = 0; j < espacioColumnas - 3; j += 1) {

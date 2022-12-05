@@ -11,5 +11,6 @@ package com.mycompany.casoprogramado2;
 public enum Colorficha 
 {
     ROJO,
+    NEUTRO,
     AZUL;
 }
