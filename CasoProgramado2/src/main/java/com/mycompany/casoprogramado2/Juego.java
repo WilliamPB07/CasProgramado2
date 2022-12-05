@@ -61,7 +61,7 @@ public class Juego extends Tablero {
         //Llena el tablero de espacios vacios para que no se imprima el null        
         for (int i = 0; i <= tablerO.espacioColumnas - 1; i++) {
             for (int j = 0; j <= tablerO.espacioFilas - 1; j++) {
-                tablero[i][j] = " ";
+                tablero[i][j] = "*";
             }
         }
         
@@ -90,7 +90,7 @@ public class Juego extends Tablero {
                                 {
                                     //Al cumplirse esta condicion se termina el turno del jugador1
                                     if (tablero[i][posicionColumna] != X && tablero[i][posicionColumna] != O) {
-                                        tablero[i][posicionColumna] = "X";
+                                        tablero[i][posicionColumna] = X;
                                         verificador2 = true;
                                         verificador1 = true;
                                         turno++;
