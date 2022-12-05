@@ -11,12 +11,12 @@ package com.mycompany.casoprogramado2;
  */
 public class Tablero{
     
-    public static Colorficha[][] tablero = new Colorficha[6][7];
-    public static int espacioColumnas;
-    public static int espacioFilas;
-    public static boolean terminaJuego = false;
+    public  String[][] tablero = new String[7][7];
+    public  int espacioColumnas;
+    public  int espacioFilas;
+    public  boolean terminaJuego = false;
     
-    public static void dibujoTablero(Colorficha[][] tabla) 
+    public void dibujoTablero(String[][] tabla) 
     {
         System.out.print("          ");
         for (int i = 1; i < espacioColumnas + 1; i += 1) {
@@ -36,19 +36,20 @@ public class Tablero{
             System.out.println(" |");
             if (i < espacioFilas - 1) {
                 System.out.print("        |");
-                for (int p = 1; p < espacioColumnas - 1; p += 1) {
-                    System.out.print("––––––");
+                for (int k = 1; k < espacioColumnas - 1; k += 1) {
+                    System.out.print("–––––––");
                 }
                 System.out.println("|");
             }
         }
         System.out.print("         ");
         for (int i = 1; i < espacioColumnas + 1; i += 1) {
-            System.out.print("¯¯¯¯");
+            System.out.print("¯¯¯");
         }
         System.out.println("");
     }
-     public static void verificadorGanador(Jugador auxiliarJugador, Colorficha auxilarCaracter) 
+ 
+    public  void verificadorGanador(String auxiliarJugador, String auxilarCaracter) 
      {
         //Lee la linea horizontal en busca del ganador
         for (int i = 1; i < espacioFilas; i += 1) {
