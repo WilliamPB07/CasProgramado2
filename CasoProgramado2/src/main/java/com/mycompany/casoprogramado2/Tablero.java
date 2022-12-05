@@ -36,7 +36,7 @@ public class Tablero{
             System.out.println(" |");
             if (i < espacioFilas - 1) {
                 System.out.print("        |");
-                for (int k = 1; k < espacioColumnas - 1; k += 1) {
+                for (int p = 1; p < espacioColumnas - 1; p += 1) {
                     System.out.print("–––––––");
                 }
                 System.out.println("|");
@@ -44,10 +44,11 @@ public class Tablero{
         }
         System.out.print("         ");
         for (int i = 1; i < espacioColumnas + 1; i += 1) {
-            System.out.print("¯¯¯");
+            System.out.print("¯¯¯¯");
         }
         System.out.println("");
     }
+     
  
     public  void verificadorGanador(String auxiliarJugador, String auxilarCaracter) 
      {
