@@ -23,6 +23,7 @@ public class Juego extends Tablero {
     String Jugador1;
     String Jugador2;
     String auxiliarJugador = "";
+    int contador = 0;
     int posicionColumna = 0;
     public Juego(Scanner entrada)
     {
@@ -83,35 +84,46 @@ public class Juego extends Tablero {
                 }
                 else
                 {
-                    int contador = 1;
-                            for (int i = tablerO.espacioColumnas - 1; i > -1; i = i - 1) 
+                    contador = 1;
+                    for (int i = tablerO.espacioColumnas - 1; i > -1; i = i - 1) 
+                    {
+                        if (!verificador2) 
+                        {
+                            //Al cumplirse esta condicion se termina el turno del jugador1
+                            if (tablero[i][posicionColumna] != X && tablero[i][posicionColumna] != O) 
                             {
-                                if (!verificador2) 
-                                {
-                                    //Al cumplirse esta condicion se termina el turno del jugador1
-                                    if (tablero[i][posicionColumna] != X && tablero[i][posicionColumna] != O) {
-                                        tablero[i][posicionColumna] = X;
-                                        verificador2 = true;
-                                        verificador1 = true;
-                                        turno++;
-                                    } else {
-                                        contador += 1;
-                                    }
-                                }
-                                if (contador == tablerO.espacioFilas + 1) 
-                                {
-                                    System.out.println("Esta columna esta completa, escoja otra");
-                                }
+                                tablero[i][posicionColumna] = X;
+                                verificador2 = true;
+                                verificador1 = true;
+                                turno++;
+                            } else 
+                            {
+                                contador += 1;
                             }
+                        }
+                        if (contador == tablerO.espacioFilas + 1) 
+                        {
+                            System.out.println("Esta columna esta completa, escoja otra");
+                        }
+                    }
                 }
-                
             }
             verificador1 = false;
             verificador2 = false;
-            auxiliarJugador = Jugador2;
+            auxiliarJugador = Jugador1;
             auxiliarJugador = X;
-            tablerO.verificadorGanador(Jugador2, X);
+            tablerO.verificadorGanador(Jugador1, X);
             
+            if (turno == (tablerO.espacioColumnas * tablerO.espacioFilas) +1) 
+            {
+                juegoTerminado = true;
+                tablerO.dibujoTablero(tablero);
+                System.out.println("""
+                                   Empate!!
+                                   El tablerO se lleno sin que hubiera ganador!!""");
+            }
+            
+            //El turno del jugador2
             if (!juegoTerminado == false)
             {
                 while(!verificador1){
@@ -127,26 +139,28 @@ public class Juego extends Tablero {
                 }
                 else
                 {
-                    int contador = 1;
-                            for (int i = tablerO.espacioColumnas - 1; i > -1; i = i - 1) 
+                    contador = 1;
+                    for (int i = tablerO.espacioColumnas - 1; i > -1; i = i - 1) 
+                    {
+                        if (!verificador2) 
+                        {
+                            //Al cumplirse esta condicion se termina el turno del jugador1
+                            if (tablero[i][posicionColumna] != O && tablero[i][posicionColumna] != X) 
                             {
-                                if (!verificador2) 
-                                {
-                                    //Al cumplirse esta condicion se termina el turno del jugador1
-                                    if (tablero[i][posicionColumna] != O && tablero[i][posicionColumna] != X) {
-                                        tablero[i][posicionColumna] = "O";
-                                        verificador2 = true;
-                                        verificador1 = true;
-                                        turno++;
-                                    } else {
-                                        contador += 1;
-                                    }
-                                }
-                                if (contador == tablerO.espacioFilas + 1) 
-                                {
-                                    System.out.println("Esta columna esta completa, escoja otra");
-                                }
+                                tablero[i][posicionColumna] = O;
+                                verificador2 = true;
+                                verificador1 = true;
+                                turno++;
+                            } else 
+                            {
+                                contador += 1;
                             }
+                        }
+                        if (contador == tablerO.espacioFilas + 1) 
+                        {
+                            System.out.println("Esta columna esta completa, escoja otra");
+                        }
+                    }
                 }
                 
             }
