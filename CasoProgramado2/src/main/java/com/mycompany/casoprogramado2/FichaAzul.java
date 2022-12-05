@@ -12,7 +12,7 @@ public class FichaAzul  extends Jugador
 {
     public FichaAzul()
     {
-        super("", 2, Colorficha.AZUL);
+        super("", 1, Colorficha.AZUL);
     }
     
 }
